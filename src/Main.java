@@ -19,6 +19,9 @@ public class Main {
         int num = 19;
         System.out.println("Is num a prime number ? " + mp.isPrime(num));
 
-        System.out.println(mp.getGreatestCommonDivisor(45, 81));
+        System.out.println(mp.getGreatestCommonDivisor(63, 45));
+
+        int[] myArr = {22, 64, 12, 33, 71, 6, 9};
+        System.out.println(mp.highestNumber(myArr));
     }
 }

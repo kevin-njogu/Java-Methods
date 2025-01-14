@@ -27,19 +27,25 @@ public class MethodsPractice {
 
     //finding GCD
     int getGreatestCommonDivisor(int a, int b) {
-
-        boolean notEquals = true;
-
         do {
-            if (a == b) {
-                notEquals = false;
-                return a;
-            }else if (a > b) {
+            if (a > b) {
                 a = a - b;
             } else if (a < b) {
                 b = b - a;
             }
-            }while (notEquals);
+            }while (a != b);
         return a;
+    }
+
+    //finding the largest number in an array
+    int highestNumber(int[] arr) {
+        int highest = 0;
+
+        for (int i : arr) {
+            if (i > highest) {
+                highest = i;
+            }
+        }
+        return highest;
     }
 }
