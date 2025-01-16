@@ -23,5 +23,24 @@ public class Main {
 
         int[] myArr = {22, 64, 12, 33, 71, 6, 9};
         System.out.println(mp.highestNumber(myArr));
+
+       MethodOverloading mo = new MethodOverloading();
+       System.out.println(mo.max(10, 15));
+       System.out.println(mo.max(10.2f, 15.3f));
+       System.out.println(mo.max(100, 10, 36));
+
+       System.out.println(mo.area(4.5f));
+       System.out.println(mo.area(6.5f, 4f));
+
+       mo.reverse(350);
+
+       int[] thisArr = {2, 3, 4, 5, 6, 7};
+       mo.reverse(thisArr);
+
+       VariableArguments va = new VariableArguments();
+       va.show(10, 30, 66, 77, 98, 1000);
+       va.getNames(3, "Kevin", "John", "Smith", "Mario");
+       System.out.println(va.max(3,4,77,100,32,1200,13,5,7));
+       System.out.println(va.max());
     }
 }
