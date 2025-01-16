@@ -42,5 +42,7 @@ public class Main {
        va.getNames(3, "Kevin", "John", "Smith", "Mario");
        System.out.println(va.max(3,4,77,100,32,1200,13,5,7));
        System.out.println(va.max());
+       System.out.println(va.sum(32, 32, 30, 40));
+       System.out.println(va.sum());
     }
 }
